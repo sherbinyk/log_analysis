@@ -1,7 +1,7 @@
 import psycopg2 as p
 
 
-
+# Most popular three articles of all time
 def query1():
     db = p.connect("dbname='news'")
     cur = db.cursor()
@@ -14,12 +14,13 @@ def query1():
     rows = cur.fetchall()
     print("\nTop 3 Articles")
     for r in rows:
-        print (r)
+        print(r)
 
 
 query1()
 
 
+#  Most popular article authors of all time
 def query2():
     db = p.connect("dbname='news'")
     cur = db.cursor()
@@ -32,13 +33,15 @@ def query2():
 
     rows = cur.fetchall()
     print("\n\nTop 3 authors")
+    print("Author         |articles        |views")
     for r in rows:
-        print (r)
+        print(r)
 
 
 query2()
 
 
+# Show on which days did more than 1% of requests lead to errors
 def query3():
     db = p.connect("dbname='news'")
     cur = db.cursor()
@@ -51,9 +54,9 @@ def query3():
     )
 
     rows = cur.fetchall()
-    print("\n\nTop 3 authors")
+    print("\n\nErrors in Percent")
     for r in rows:
-        print (r)
+        print(r)
 
 
 query3()
