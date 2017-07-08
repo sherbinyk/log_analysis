@@ -1,4 +1,5 @@
 import psycopg2 as p
+#!/usr/bin/env python3
 
 
 # Most popular three articles of all time
