@@ -33,7 +33,6 @@ def query2():
 
     rows = cur.fetchall()
     print("\n\nTop 3 authors")
-    print("Author         |articles        |views")
     for r in rows:
         print(r)
 
