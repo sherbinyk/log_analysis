@@ -1,5 +1,4 @@
 import psycopg2 as p
-#!/usr/bin/env python3
 
 
 # Most popular three articles of all time
@@ -14,8 +13,8 @@ def query1():
 
     rows = cur.fetchall()
     print("\nTop 3 Articles")
-    for r in rows:
-        print(r)
+    for article in rows:
+        print "Article: {0}     | {1} views".format(article[0], article[1])
 
 
 query1()
@@ -33,9 +32,9 @@ def query2():
     )
 
     rows = cur.fetchall()
-    print("\n\nTop 3 authors")
-    for r in rows:
-        print(r)
+    print("\n\nTop authors")
+    for author in rows:
+        print "Author name: {0}  | {1} views".format(author[0], author[1])
 
 
 query2()
@@ -56,7 +55,7 @@ def query3():
     rows = cur.fetchall()
     print("\n\nErrors in Percent")
     for r in rows:
-        print(r)
+        print "Date: {0}  | Failed Requests: {1}   | Total Requests: {2} | Error in Percentage: {3}%".format(r[0], r[1], r[2], r[3])
 
 
 query3()
