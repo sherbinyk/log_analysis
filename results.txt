@@ -1,15 +1,15 @@
 Top 3 Articles
-('Candidate is jerk, alleges rival', 338647)
-('Bears love berries, alleges bear', 253801)
-('Bad things gone, say good people', 170098)
+Article: Candidate is jerk, alleges rival     | 338647 views
+Article: Bears love berries, alleges bear     | 253801 views
+Article: Bad things gone, say good people     | 170098 views
 
 
-Top 3 authors
-('Ursula La Multa', 507594)
-('Rudolf von Treppenwitz', 423457)
-('Anonymous Contributor', 170098)
-('Markoff Chaney', 84557)
+Top authors
+Author name: Ursula La Multa  | 507594 views
+Author name: Rudolf von Treppenwitz  | 423457 views
+Author name: Anonymous Contributor  | 170098 views
+Author name: Markoff Chaney  | 84557 views
 
 
 Errors in Percent
-(datetime.date(2016, 7, 17), 1265, 55907, 2.26268624680273)
+Date: 2016-07-17  | Failed Requests: 1265   | Total Requests: 55907 | Error in Percentage: 2.2626862468%
