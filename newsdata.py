@@ -1,4 +1,18 @@
+#!/usr/bin/env python3
 import psycopg2 as p
+
+dbname = "news"
+
+def connect(news):
+    try:
+        db = p.connect("dbname={}".format(news))
+        c = db.cursor()
+        return db, c
+    except psycopg2.Error as e:
+        print
+        'Unable to connect to database'
+        raise e
+    db, c = connect()
 
 
 # Most popular three articles of all time
