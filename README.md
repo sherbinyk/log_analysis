@@ -6,7 +6,7 @@
 
 ### Steps
 1. Start Vagrant and run `vagrant up` to download  the Linux file systems.
-2. Logi in to Vagrant by `vagrant ssh`.
+2. Log in to Vagrant by `vagrant ssh`.
 3. Install [Python3](https://www.python.org/downloads/ "Python3").
 4. Install [PostgreSQL](https://www.postgresql.org/download/ "PostgreSQL").
 5. Install [Psycopg2] (http://initd.org/psycopg/download/ "Psycopg").
