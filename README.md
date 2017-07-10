@@ -1,11 +1,21 @@
 # Udacity Log Analaysis Project
 
 ### Requirments
-1. Install Python3
-2. Install Psycopg2
+1. Install [Vagrant](https://www.vagrantup.com/downloads.html "vagrant") and [VirtualBox](https://www.virtualbox.org/wiki/Downloads "VirtualBox").
+
+
+### Steps
+1. Start Vagrant and run `vagrant up` to download  the Linux file systems.
+2. Logi in to Vagrant by `vagrant ssh`.
+3. Install [Python3](https://www.python.org/downloads/ "Python3").
+4. Install [PostgreSQL](https://www.postgresql.org/download/ "PostgreSQL").
+5. Install [Psycopg2] (http://initd.org/psycopg/download/ "Psycopg").
+6. Download the database file from [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip.).
+7. Unzip the database file.
+8. Connect to the database by `psql -d news -f newsdata.sql`
 
 ### How tp run the program?
-- Run newsdata.py
+- Run `python3 newsdata.py`
 
 ### About the project
 This is project is for Udacity Full Stack Nanoegree and we are required to solve 3 problems in order to finish this project.
@@ -21,8 +31,6 @@ On which days did more than 1% of requests lead to errors? The log table include
 
 **Create Views Statments**
 
-`CREATE VIEW server_not_found AS SELECT date(time), COUNT(status) FROM log WHERE status = '404 NOT FOUND' GROUP BY date(time);`
-
-`CREATE VIEW total AS SELECT date(time), COUNT(status) FROM log GROUP BY date(time);`
-
+`CREATE VIEW fail AS SELECT date(time), COUNT(status) FROM log WHERE status = '404 NOT FOUND' GROUP BY date(time);`
 `SELECT f.date AS date, f.count AS Fail_Req, a.count AS All_Req FROM fail AS f JOIN total AS a ON f.date = a.date;`
+
