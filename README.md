@@ -34,4 +34,3 @@ On which days did more than 1% of requests lead to errors? The log table include
 `CREATE VIEW fail AS SELECT date(time), COUNT(status) FROM log WHERE status = '404 NOT FOUND' GROUP BY date(time);`
 `CREATE VIEW total AS SELECT date(time), COUNT(status) FROM log GROUP BY date(time);`
 `SELECT f.date AS date, f.count AS Fail_Req, a.count AS All_Req FROM fail AS f JOIN total AS a ON f.date = a.date;`
-
