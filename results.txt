@@ -12,4 +12,4 @@ Author name: Markoff Chaney  | 84557 views
 
 
 Errors in Percent
-Date: 2016-07-17  | Failed Requests: 1265   | Total Requests: 55907 | Error in Percentage: 2.2626862468%
+Date: July 17, 2016  | Error in Percentage: 2.26%
