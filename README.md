@@ -9,7 +9,7 @@
 2. Log in to Vagrant by `vagrant ssh`.
 3. Install [Python3](https://www.python.org/downloads/ "Python3").
 4. Install [PostgreSQL](https://www.postgresql.org/download/ "PostgreSQL").
-5. Install [Psycopg2] (http://initd.org/psycopg/download/ "Psycopg").
+5. Install [Psycopg2](http://initd.org/psycopg/download/ "Psycopg").
 6. Download the database file from [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip.).
 7. Unzip the database file.
 8. Connect to the database by `psql -d news -f newsdata.sql`
