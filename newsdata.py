@@ -26,7 +26,9 @@ def query1():
     rows = cur.fetchall()
     print("\nTop 3 Articles")
     for article in rows:
-        print("Article: {0}     | {1} views".format(article[0], article[1]))
+        print("Article: {0}     | {1} views"
+              .format(article[0], article[1])
+              )
 
 
 def query2():
@@ -43,7 +45,9 @@ def query2():
     rows = cur.fetchall()
     print("\n\nTop authors")
     for author in rows:
-        print("Author name: {0}  | {1} views".format(author[0], author[1]))
+        print("Author name: {0}  | {1} views"
+              .format(author[0], author[1])
+              )
 
 
 def query3():
@@ -60,9 +64,9 @@ def query3():
     rows = cur.fetchall()
     print("\n\nErrors in Percent")
     for r in rows:
-        print("Date: {0:%B %d, %Y} \
-                | Error in Percentage: {1:.2f}%"
-              .format(r[0], r[1]))
+        print("Date: {0:%B %d, %Y}  | Error in Percentage: {1:.2f}%"
+              .format(r[0], r[1])
+              )
 
 
 if __name__ == "__main__":
